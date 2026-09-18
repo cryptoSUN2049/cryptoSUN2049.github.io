@@ -30,4 +30,10 @@
 
 ## Live checks
 
-Pending initial publication.
+- GitHub Pages status: built, HTTPS enforced, main / root.
+- Content deployment commit: `e40c7d979eeac81f3567b10dc597789fac5bd9c1`.
+- Live URL https://cryptosun2049.github.io/ returns HTTP 200 with the expected title, one h1, four timeline entries and the production stylesheet.
+- Live 320px and 1440px checks: viewport width equals document width; no horizontal overflow.
+- Fresh live reload: no console errors.
+- GitHub account bio and blog now match the approved copy and the Pages URL.
+- Profile README rendered on the actual GitHub profile; its remote blob matches local `e11a63dd41da1095c9b0e2fc5844c802b7b6ca07`.
