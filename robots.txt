@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /docs/
+Disallow: /tasks/
+Sitemap: https://cryptosun2049.github.io/sitemap.xml
