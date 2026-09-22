@@ -2,7 +2,7 @@
 
 ## 1. TL;DR
 - Personal homepage now includes an APUS-OpenJev reproduction-series showcase.
-- Local implementation and responsive validation complete; publication is next.
+- Published and verified at content commit b60f416; Pages built and live mobile/desktop checks passed.
 - Central message: all three variants exceed the recorded Jev API baseline on the shared 1,000-question development panel.
 - Broader model serving/engine parity work is separate and remains unfinished.
 
@@ -29,12 +29,14 @@
 - Browse js accepts expressions; eval accepts a file path. viewport accepts WxH.
 - Local preview processes can stop across session interruptions; restart port8767 when needed.
 - Supplied chart has white bottom padding; retain original bytes.
+- Pages initially delivered cached old CSS with new HTML. Stylesheet now carries a version query; verify computed display:grid and no overflow.
+- A follow-up push did not immediately trigger a Pages run; POST pages/builds queued the rebuild.
 - Ruff is mandatory but finds no Python files; browser checks validate actual content.
 
 ## 5. 下一里程碑任务清单
-- [ ] Commit/push after required lint gates.
-- [ ] Verify Pages build and live DOM/image.
-- [ ] Record publication receipt.
+- [x] Commit/push after required lint gates.
+- [x] Verify Pages build and live DOM/image.
+- [x] Record publication receipt.
 
 ## 6. 分支 / 部署状态
 - Repo cryptoSUN2049/cryptoSUN2049.github.io; isolated branch feat-openjev-showcase.
@@ -48,3 +50,5 @@
 3. Run local preview and browse from this worktree to isolate browser state.
 4. Run git diff --check and both Ruff gates before every push.
 5. Verify https://cryptosun2049.github.io/#openjev and Pages commit after publication.
+
+Final receipt: b60f4166552a0c93816cd81a8d410b8b9a95f8e8 built; live320/1440 no overflow, metrics grid, image1600px, console clean. Delivery complete. Evidence-only follow-up commit is retained on the feature branch.

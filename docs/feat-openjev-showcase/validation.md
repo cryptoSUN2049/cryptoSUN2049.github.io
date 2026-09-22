@@ -9,3 +9,6 @@
 - Live deployment verification pending; final receipt is recorded after publication.
 
 Initial Pages build 49035b4 completed. Live verification caught stale unversioned CSS (metrics display:block and overflow). Added a stylesheet version query; final deployed verification required.
+
+## Final live receipt
+Pages build b60f4166552a0c93816cd81a8d410b8b9a95f8e8: built, error null. Live 320/1440 checks after stylesheet load: no horizontal overflow, metrics display:grid, original image natural width1600, console errors none. Stylesheet URL includes v=openjev-20260922. Final narrative verified in live DOM.
