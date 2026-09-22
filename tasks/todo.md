@@ -12,3 +12,11 @@
 ## Review
 
 Published at https://cryptosun2049.github.io/ and verified on desktop and mobile. Pages reports built with HTTPS enforced. No console errors on fresh reload; all four timeline entries render. GitHub Profile and bio match the same narrative.
+
+## OpenJev showcase · 2026-09-22
+- [x] Read existing handoff; inspect clean main/status/stash/HEAD/worktrees; create isolated feat-openjev-showcase.
+- [x] Record user-approved scope: ~26ms, supplied1,000-question image, architecture and model links.
+- [x] Add project content, responsive styling and exact original image.
+- [x] Browser validate320/768/1024/1440, image identity, links and keyboard.
+- [ ] Run mandatory lint gates; commit/push; deploy and verify live Pages.
+- [ ] Record validation and handoff.

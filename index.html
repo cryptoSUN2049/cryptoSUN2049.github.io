@@ -67,6 +67,9 @@
                   <a class="artifact" href="https://huggingface.co/xDAN-AI/xDAN-L2-Qwen2.5-32b-Instruct-RM">
                     <span class="artifact-year">2025</span><span class="artifact-body"><strong>xDAN-L2 · Qwen2.5-32B RM</strong><span>32B release in the xDAN model collection</span></span><span class="external" aria-hidden="true">↗</span>
                   </a>
+                  <a class="artifact" href="#openjev">
+                    <span class="artifact-year">2026</span><span class="artifact-body"><strong>APUS-OpenJev-v1</strong><span>Decision models · 4B / 9B / 35B-A3B · co-author</span></span><span class="external" aria-hidden="true">↓</span>
+                  </a>
                 </div>
               </li>
               <li class="entry current">
@@ -75,7 +78,30 @@
                 <p class="organization">xDAN AI · Founder</p>
                 <p>Building products and systems around agents: tools, execution, feedback, and real-world tasks. Turning model capabilities into useful work.</p>
                 <ul class="tags" aria-label="Areas of work"><li>Agent infrastructure</li><li>Tools &amp; execution</li><li>Evaluation</li></ul>
-                <p>Current work includes OpenFinClaw, a financial agent project.</p>
+                <section id="openjev" class="model-showcase" aria-labelledby="openjev-title">
+                  <p class="project-kicker">2026 / JEV REPRODUCTION SERIES</p>
+                  <h4 id="openjev-title">APUS-OpenJev-v1</h4>
+                  <p class="project-credit">Co-author · APUS AI-LAB · 4B / 9B / 35B-A3B</p>
+                  <p class="project-summary">An open-source model series reproducing the Jev decision-model approach, with extensions for dynamic-depth computation. All three models outperform the recorded Jev API baseline on our shared 1,000-question development panel: 4B 80.5%, 9B 81.1%, and 35B-A3B 82.2%, versus 77.0%. Built for browser agents and business workflows.</p>
+                  <dl class="project-metrics">
+                    <div><dt>35B-A3B · 1,000-question panel</dt><dd>82.2%</dd></div>
+                    <div><dt>Above the recorded Jev API result</dt><dd>+5.2 pp</dd></div>
+                    <div><dt>9B · local HTTP median latency</dt><dd>~26 ms</dd></div>
+                  </dl>
+                  <p class="project-method"><strong>Dynamic-depth computation.</strong> Jointly trained early and full-depth paths let applications select a smaller or larger compute budget through <code>effort="low"</code> or <code>"high"</code>. Candidate scoring keeps decisions within the supplied action space.</p>
+                  <figure class="benchmark-figure">
+                    <a class="benchmark-image-link" href="assets/openjev/benchmark-1000.png" target="_blank" rel="noopener" aria-label="Open the full-size 1,000-question benchmark chart in a new tab">
+                      <img src="assets/openjev/benchmark-1000.png" width="1600" height="1000" loading="lazy" decoding="async" alt="Same 1,000-question development panel: APUS-OpenJev 35B-A3B 82.2%, 9B 81.1%, 4B 80.5%; Jev API 77.0%; Laya typed full input 50.5%. APUS uses full-depth checkpoint-5949 base plus adapter.">
+                    </a>
+                    <figcaption>Valid and correct decisions out of all 1,000 questions. Full-depth base + adapter; an expanded development panel, not a sealed final test. <a href="assets/openjev/benchmark-1000.png" target="_blank" rel="noopener">View full-size chart <span aria-hidden="true">↗</span></a></figcaption>
+                  </figure>
+                  <p class="measurement-note">Latency comes from a separate 9B serving run on one RTX PRO 6000: ~26 ms median local HTTP response time. It is not a matched-hardware speed comparison with the Jev API.</p>
+                  <nav class="project-links" aria-label="OpenJev project resources">
+                    <a href="https://huggingface.co/apus-ailab/APUS-OpenJev-v1">Models &amp; results <span aria-hidden="true">↗</span></a>
+                    <a href="https://huggingface.co/apus-ailab/APUS-OpenJev-v1/blob/main/TECHNICAL_REPORT.md">Technical report <span aria-hidden="true">↗</span></a>
+                  </nav>
+                </section>
+                <p>Other current work includes OpenFinClaw, a financial agent project.</p>
                 <a class="work-link" href="https://github.com/cryptoSUN2049/xDAN-DSH-uni-agent"><span>xDAN-DSH-uni-agent</span><span class="work-detail">Work on a uni-agent fork</span><span aria-hidden="true">↗</span></a>
               </li>
               <li class="entry future">
