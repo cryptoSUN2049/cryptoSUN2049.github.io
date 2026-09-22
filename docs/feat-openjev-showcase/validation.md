@@ -7,3 +7,5 @@
 - Claims distinguish the 1,000-question development panel from the separate 9B local HTTP latency run. All three series variants exceed the recorded Jev API score on that panel.
 - git diff --check, ruff check . and ruff format --check . are required immediately before push. Ruff has no Python files to inspect in this static site.
 - Live deployment verification pending; final receipt is recorded after publication.
+
+Initial Pages build 49035b4 completed. Live verification caught stale unversioned CSS (metrics display:block and overflow). Added a stylesheet version query; final deployed verification required.
